@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Don Agustín Carnicería</title>
+  <meta name="description" content="Don Agustín Carnicería - Carne de primera en Venado Tuerto.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="top">
+    <div class="brand">DON AGUSTÍN</div>
+    <button class="menu" onclick="document.querySelector('nav').classList.toggle('show')">☰</button>
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#ofertas">Ofertas</a>
+      <a href="#precios">Precios</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <img src="don-agustin.png" alt="Don Agustín frente a la carnicería">
+      <div class="hero-card">
+        <p class="eyebrow">CARNICERÍA</p>
+        <h1>Don Agustín</h1>
+        <h2>Tradición · Experiencia · Trayectoria</h2>
+        <p>Carne de primera para llevar a tu mesa.</p>
+        <a class="btn" id="heroWhatsApp" target="_blank" rel="noopener">PEDIR POR WHATSAPP</a>
+      </div>
+    </section>
+
+    <section id="ofertas" class="section">
+      <div class="section-title">
+        <span>🔥</span><h2>Ofertas</h2>
+      </div>
+      <div id="offers" class="cards"></div>
+    </section>
+
+    <section class="promo">
+      <div>
+        <span class="badge">PROMOCIÓN</span>
+        <h2>Comprá Más + Pagás Menos</h2>
+        <p>Consultanos por nuestras promociones del día.</p>
+      </div>
+      <a class="btn light" id="promoWhatsApp" target="_blank" rel="noopener">CONSULTAR OFERTAS</a>
+    </section>
+
+    <section id="precios" class="section">
+      <div class="section-title">
+        <span>🥩</span><h2>Lista de precios</h2>
+      </div>
+      <p class="hint">Los precios pueden actualizarse fácilmente desde el archivo <b>productos.js</b>.</p>
+      <div id="products"></div>
+    </section>
+
+    <section class="info-grid">
+      <article>
+        <div class="icon">🚚</div>
+        <h3>Envíos</h3>
+        <p>Consultá por envíos en Venado Tuerto.</p>
+        <a class="text-link" id="deliveryWhatsApp" target="_blank" rel="noopener">Consultar envío →</a>
+      </article>
+      <article>
+        <div class="icon">📍</div>
+        <h3>Encontranos</h3>
+        <p>Cabral 1054 · Venado Tuerto</p>
+        <a class="text-link" href="https://www.google.com/maps/search/?api=1&query=Cabral+1054+Venado+Tuerto" target="_blank" rel="noopener">Ver ubicación →</a>
+      </article>
+      <article>
+        <div class="icon">📱</div>
+        <h3>Pedidos</h3>
+        <p>Escribinos directamente por WhatsApp.</p>
+        <a class="text-link" id="contactWhatsApp" target="_blank" rel="noopener">Abrir WhatsApp →</a>
+      </article>
+    </section>
+
+    <section id="contacto" class="contact">
+      <h2>¿Qué vas a llevar hoy?</h2>
+      <p>Hacé tu pedido de manera rápida y sencilla.</p>
+      <a class="btn" id="bottomWhatsApp" target="_blank" rel="noopener">📲 PEDIR POR WHATSAPP</a>
+      <p class="phone">3462-414401</p>
+      <p class="address">Cabral 1054 · Venado Tuerto</p>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Don Agustín Carnicería · Carne de Primera</footer>
+
+  <script src="productos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
